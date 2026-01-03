@@ -1,4 +1,9 @@
 <?php
 
-$connection = new mysqli("localhost","root","","project");
+$connection = new mysqli("db", "root", "root", "projectdb");
+
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+
 
