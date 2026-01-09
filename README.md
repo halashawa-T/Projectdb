@@ -99,3 +99,21 @@ docker-compose down
 
 Stop and remove volumes (full cleanup):
 docker-compose down -v
+
+
+🚀 VPS Deployment
+
+This project was deployed to a Virtual Private Server (VPS) using Back4App.
+Back4App provides a managed VPS environment where Docker is pre-installed
+and container execution is handled automatically.
+
+The Dockerized project from Assignment #2 was uploaded to Back4App and
+deployed using the platform’s container-based workflow, without requiring
+manual installation of Git or Docker through a terminal.
+
+The application runs inside Docker containers and is exposed publicly
+through the URL provided by Back4App.
+
+🌐 Production URL
+
+https://newsdashboard-y8djycut.b4a.run

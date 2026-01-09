@@ -57,3 +57,20 @@ Using clear documentation (README.md) is just as important as writing code.
 GitHub is not just for storing code — it is a way to present a complete, runnable project.
 
 Writing commits and organizing files properly makes the project easier to understand and grade.
+
+
+ VPS Deployment Notes
+
+The main challenge during deployment was understanding the difference between
+local Docker deployment and Back4App’s managed VPS environment.
+
+Unlike a traditional VPS, Back4App abstracts the installation and execution
+of Docker and Git, which initially caused confusion regarding terminal access.
+
+Another challenge was ensuring the application entry point was correctly
+configured. The issue was resolved by placing the main index.php file in the
+default location expected by the container, allowing the platform to serve
+the application correctly.
+
+This deployment reinforced important concepts such as container-based
+deployment, environment abstraction, and production configuration
